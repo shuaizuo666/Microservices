@@ -1,47 +1,47 @@
-2025-11-26 22:40:06 [restartedMain] INFO  org.example.Main - Starting Main using Java 21.0.7 with PID 205960 (D:\min\Microservices\target\classes started by 87324 in D:\min\Microservices)
-2025-11-26 22:40:06 [restartedMain] DEBUG org.example.Main - Running with Spring Boot v3.2.0, Spring v6.1.1
-2025-11-26 22:40:06 [restartedMain] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
-2025-11-26 22:40:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2025-11-26 22:40:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2025-11-26 22:40:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2025-11-26 22:40:07 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 1 JPA repository interface.
-2025-11-26 22:40:08 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=c174cc4e-34ab-3577-8d10-538c75dd3339
-2025-11-26 22:40:08 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
-2025-11-26 22:40:08 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
-2025-11-26 22:40:08 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
-2025-11-26 22:40:08 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
-2025-11-26 22:40:08 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 2168 ms
-2025-11-26 22:40:09 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
-2025-11-26 22:40:09 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
-2025-11-26 22:40:09 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
-2025-11-26 22:40:09 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
-2025-11-26 22:40:09 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
-2025-11-26 22:40:10 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@765acda4
-2025-11-26 22:40:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
-2025-11-26 22:40:10 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2025-11-26 22:40:10 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2025-11-26 22:40:11 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2025-11-26 22:40:11 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
-2025-11-26 22:40:11 [restartedMain] DEBUG o.e.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
-2025-11-26 22:40:12 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)
-2025-11-26 22:40:12 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
-2025-11-26 22:40:12 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()
-2025-11-26 22:40:12 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
-2025-11-26 22:40:12 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)
-2025-11-26 22:40:12 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
-2025-11-26 22:40:12 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)
-2025-11-26 22:40:12 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
-2025-11-26 22:40:12 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2025-11-26 22:40:12 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@13f4fdf9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@71be1576, org.springframework.security.web.context.SecurityContextHolderFilter@733ec42b, org.springframework.security.web.header.HeaderWriterFilter@74f4f7a1, org.springframework.web.filter.CorsFilter@7d2929, org.springframework.security.web.authentication.logout.LogoutFilter@697954a5, org.example.config.JwtAuthenticationFilter@6c188b72, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15d3ee00, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@764fcc28, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2fcbde53, org.springframework.security.web.session.SessionManagementFilter@c5ec2d7, org.springframework.security.web.access.ExceptionTranslationFilter@74ef3e45, org.springframework.security.web.access.intercept.AuthorizationFilter@8fd4aa3]
-2025-11-26 22:40:12 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
-2025-11-26 22:40:12 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2025-11-26 22:40:12 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
-2025-11-26 22:40:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
-2025-11-26 22:40:12 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
-2025-11-26 22:40:12 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+2025-12-07 18:08:12 [restartedMain] INFO  org.example.Main - Starting Main using Java 21.0.7 with PID 28200 (D:\min\Microservices\target\classes started by 87324 in D:\min\Microservices)
+2025-12-07 18:08:12 [restartedMain] DEBUG org.example.Main - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-12-07 18:08:12 [restartedMain] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:08:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 18:08:12 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 18:08:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 18:08:13 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interface.
+2025-12-07 18:08:13 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d63805e9-dc1d-3a8b-a2f6-30c65dac66a4
+2025-12-07 18:08:14 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-07 18:08:14 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 18:08:14 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-12-07 18:08:14 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-12-07 18:08:14 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1432 ms
+2025-12-07 18:08:14 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 18:08:14 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-12-07 18:08:14 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 18:08:14 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 18:08:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 18:08:14 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5eb716da
+2025-12-07 18:08:14 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 18:08:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 18:08:14 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-07 18:08:15 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 18:08:15 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:08:15 [restartedMain] DEBUG o.e.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-07 18:08:15 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()
+2025-12-07 18:08:15 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:08:15 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)
+2025-12-07 18:08:15 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:08:15 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)
+2025-12-07 18:08:15 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:08:15 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)
+2025-12-07 18:08:15 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:08:15 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 18:08:16 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@237cbde5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@500582bc, org.springframework.security.web.context.SecurityContextHolderFilter@79816aee, org.springframework.security.web.header.HeaderWriterFilter@750c1d89, org.springframework.web.filter.CorsFilter@72875913, org.springframework.security.web.authentication.logout.LogoutFilter@3197dce9, org.example.config.JwtAuthenticationFilter@5855d29c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@556a5b70, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a076226, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ed2e3d3, org.springframework.security.web.session.SessionManagementFilter@7aa29a8d, org.springframework.security.web.access.ExceptionTranslationFilter@4dbdf30a, org.springframework.security.web.access.intercept.AuthorizationFilter@47c68987]
+2025-12-07 18:08:16 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 18:08:16 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-07 18:08:16 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:08:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 18:08:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 18:08:16 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
 
 Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2025-11-26 22:40:12 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+2025-12-07 18:08:16 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
 
 ***************************
 APPLICATION FAILED TO START
@@ -55,3 +55,253 @@ Action:
 
 Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
 
+2025-12-07 18:08:43 [restartedMain] INFO  org.example.Main - Starting Main using Java 21.0.7 with PID 10504 (D:\min\Microservices\target\classes started by 87324 in D:\min\Microservices)
+2025-12-07 18:08:43 [restartedMain] DEBUG org.example.Main - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-12-07 18:08:43 [restartedMain] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:08:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 18:08:43 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 18:08:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 18:08:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interface.
+2025-12-07 18:08:43 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d63805e9-dc1d-3a8b-a2f6-30c65dac66a4
+2025-12-07 18:08:44 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-07 18:08:44 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 18:08:44 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-12-07 18:08:44 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-12-07 18:08:44 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1128 ms
+2025-12-07 18:08:44 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 18:08:44 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-12-07 18:08:44 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 18:08:44 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 18:08:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 18:08:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@adc7619
+2025-12-07 18:08:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 18:08:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 18:08:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-07 18:08:45 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 18:08:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:08:45 [restartedMain] DEBUG o.e.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-07 18:08:45 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)
+2025-12-07 18:08:45 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:08:45 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)
+2025-12-07 18:08:45 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:08:45 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()
+2025-12-07 18:08:45 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:08:45 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)
+2025-12-07 18:08:45 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:08:45 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 18:08:45 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44fc56a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2285247c, org.springframework.security.web.context.SecurityContextHolderFilter@44a67155, org.springframework.security.web.header.HeaderWriterFilter@b1d049c, org.springframework.web.filter.CorsFilter@11035ac6, org.springframework.security.web.authentication.logout.LogoutFilter@55dd322c, org.example.config.JwtAuthenticationFilter@422fd473, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@74e0ddc5, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a3a92e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2bbecacf, org.springframework.security.web.session.SessionManagementFilter@35e01a34, org.springframework.security.web.access.ExceptionTranslationFilter@8a9fbe2, org.springframework.security.web.access.intercept.AuthorizationFilter@75b265b2]
+2025-12-07 18:08:46 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 18:08:46 [restartedMain] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-07 18:08:46 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:08:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 18:08:46 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 18:08:46 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-07 18:08:46 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-12-07 18:09:02 [main] INFO  org.example.Main - Starting Main v1.0-SNAPSHOT using Java 21.0.7 with PID 44180 (D:\min\Microservices\target\auth-service-1.0-SNAPSHOT.jar started by 87324 in D:\min\Microservices)
+2025-12-07 18:09:02 [main] DEBUG org.example.Main - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-12-07 18:09:02 [main] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:09:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 18:09:03 [main] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interface.
+2025-12-07 18:09:04 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=a2b760b2-d2be-3a1e-82de-82ee16f9cc3c
+2025-12-07 18:09:04 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-07 18:09:04 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 18:09:04 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-12-07 18:09:04 [main] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-12-07 18:09:04 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1867 ms
+2025-12-07 18:09:05 [main] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 18:09:05 [main] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-12-07 18:09:05 [main] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 18:09:05 [main] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 18:09:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 18:09:05 [main] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5fbae40
+2025-12-07 18:09:05 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 18:09:05 [main] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 18:09:05 [main] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-07 18:09:06 [main] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 18:09:06 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:09:06 [main] DEBUG o.e.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-07 18:09:06 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)
+2025-12-07 18:09:06 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:09:06 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)
+2025-12-07 18:09:06 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:09:06 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)
+2025-12-07 18:09:06 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:09:06 [main] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()
+2025-12-07 18:09:06 [main] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:09:06 [main] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 18:09:07 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@63d43a5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@55159007, org.springframework.security.web.context.SecurityContextHolderFilter@257da215, org.springframework.security.web.header.HeaderWriterFilter@3bf306d3, org.springframework.web.filter.CorsFilter@edf4973, org.springframework.security.web.authentication.logout.LogoutFilter@2396dc4e, org.example.config.JwtAuthenticationFilter@66acaa54, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@f3e6876, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@52c2d1e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a49753, org.springframework.security.web.session.SessionManagementFilter@2740585b, org.springframework.security.web.access.ExceptionTranslationFilter@61c42e54, org.springframework.security.web.access.intercept.AuthorizationFilter@19f9404d]
+2025-12-07 18:09:07 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-12-07 18:09:07 [main] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:09:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 18:09:07 [main] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 18:09:07 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-12-07 18:09:07 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8081 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8081 or configure this application to listen on another port.
+
+2025-12-07 18:10:27 [restartedMain] INFO  org.example.Main - Starting Main using Java 21.0.7 with PID 40932 (D:\min\Microservices\target\classes started by 87324 in D:\min\Microservices)
+2025-12-07 18:10:27 [restartedMain] DEBUG org.example.Main - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-12-07 18:10:27 [restartedMain] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:10:27 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 18:10:27 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 18:10:28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 18:10:28 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 30 ms. Found 1 JPA repository interface.
+2025-12-07 18:10:28 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d63805e9-dc1d-3a8b-a2f6-30c65dac66a4
+2025-12-07 18:10:28 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-07 18:10:28 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 18:10:28 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-12-07 18:10:28 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-12-07 18:10:28 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1036 ms
+2025-12-07 18:10:28 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 18:10:28 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-12-07 18:10:28 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 18:10:28 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 18:10:28 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 18:10:28 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@adc7619
+2025-12-07 18:10:28 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 18:10:28 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 18:10:28 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-07 18:10:29 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 18:10:29 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:10:29 [restartedMain] DEBUG o.e.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-07 18:10:29 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)
+2025-12-07 18:10:29 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:10:29 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()
+2025-12-07 18:10:29 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:10:29 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)
+2025-12-07 18:10:29 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:10:29 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)
+2025-12-07 18:10:29 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:10:29 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 18:10:30 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@75b265b2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@700867a5, org.springframework.security.web.context.SecurityContextHolderFilter@137a12b8, org.springframework.security.web.header.HeaderWriterFilter@5a515a4, org.springframework.web.filter.CorsFilter@49ae652c, org.springframework.security.web.authentication.logout.LogoutFilter@153551ac, org.example.config.JwtAuthenticationFilter@422fd473, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cb7a0af, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27a0bee2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44fc56a4, org.springframework.security.web.session.SessionManagementFilter@71a2f24f, org.springframework.security.web.access.ExceptionTranslationFilter@5ebe7dfa, org.springframework.security.web.access.intercept.AuthorizationFilter@1823a392]
+2025-12-07 18:10:30 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 18:10:30 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/api'
+2025-12-07 18:10:30 [restartedMain] INFO  org.example.Main - Started Main in 3.099 seconds (process running for 3.374)
+2025-12-07 18:10:50 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 18:10:50 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 18:10:50 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-12-07 18:10:50 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2025-12-07 18:10:50 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:10:50 [http-nio-8081-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/swagger-ui/index.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-12-07 18:10:50 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-12-07 18:10:50 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-12-07 18:10:50 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:10:50 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-12-07 18:10:54 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2025-12-07 18:10:54 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:10:54 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-12-07 18:10:54 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-12-07 18:10:54 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:10:54 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-12-07 18:11:11 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2025-12-07 18:11:11 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:11:11 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-12-07 18:11:11 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /error
+2025-12-07 18:11:11 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:11:11 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.Http403ForbiddenEntryPoint - Pre-authenticated entry point called. Rejecting access
+2025-12-07 18:11:40 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:11:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-12-07 18:11:40 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-12-07 18:12:42 [restartedMain] INFO  org.example.Main - Starting Main using Java 21.0.7 with PID 42808 (D:\min\Microservices\target\classes started by 87324 in D:\min\Microservices)
+2025-12-07 18:12:42 [restartedMain] DEBUG org.example.Main - Running with Spring Boot v3.2.0, Spring v6.1.1
+2025-12-07 18:12:42 [restartedMain] INFO  org.example.Main - No active profile set, falling back to 1 default profile: "default"
+2025-12-07 18:12:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-12-07 18:12:42 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-12-07 18:12:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-12-07 18:12:43 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2025-12-07 18:12:43 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=d63805e9-dc1d-3a8b-a2f6-30c65dac66a4
+2025-12-07 18:12:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8081 (http)
+2025-12-07 18:12:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-12-07 18:12:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.16]
+2025-12-07 18:12:43 [restartedMain] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring embedded WebApplicationContext
+2025-12-07 18:12:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1214 ms
+2025-12-07 18:12:43 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-12-07 18:12:44 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.3.1.Final
+2025-12-07 18:12:44 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-12-07 18:12:44 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-12-07 18:12:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-12-07 18:12:44 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@adc7619
+2025-12-07 18:12:44 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-12-07 18:12:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-12-07 18:12:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-12-07 18:12:44 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-12-07 18:12:44 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-12-07 18:12:45 [restartedMain] DEBUG o.e.config.JwtAuthenticationFilter - Filter 'jwtAuthenticationFilter' configured for use
+2025-12-07 18:12:45 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)
+2025-12-07 18:12:45 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.toggleUserStatus(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:12:45 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()
+2025-12-07 18:12:45 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.getAllUsers()]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:12:45 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)
+2025-12-07 18:12:45 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.deleteUser(java.lang.Long)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:12:45 [restartedMain] DEBUG o.s.s.a.p.PrePostAnnotationSecurityMetadataSource - @org.springframework.security.access.prepost.PreAuthorize("hasRole(\'ADMIN\')") found on specific method: public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)
+2025-12-07 18:12:45 [restartedMain] DEBUG o.s.s.a.m.DelegatingMethodSecurityMetadataSource - Caching method [CacheKey[org.example.controller.UserController; public org.springframework.http.ResponseEntity org.example.controller.UserController.updateUser(java.lang.Long,org.example.dto.UserUpdateDto)]] with attributes [[authorize: 'hasRole('ADMIN')', filter: 'null', filterTarget: 'null']]
+2025-12-07 18:12:45 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-12-07 18:12:45 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@691a582d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@556a5b70, org.springframework.security.web.context.SecurityContextHolderFilter@72ead28, org.springframework.security.web.header.HeaderWriterFilter@8a9fbe2, org.springframework.web.filter.CorsFilter@6a076226, org.springframework.security.web.authentication.logout.LogoutFilter@555dc70f, org.example.config.JwtAuthenticationFilter@422fd473, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44a67155, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71a2f24f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1823a392, org.springframework.security.web.session.SessionManagementFilter@317bd16c, org.springframework.security.web.access.ExceptionTranslationFilter@3fb7791c, org.springframework.security.web.access.intercept.AuthorizationFilter@55dd322c]
+2025-12-07 18:12:45 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-12-07 18:12:45 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8081 (http) with context path '/api'
+2025-12-07 18:12:45 [restartedMain] INFO  org.example.Main - Started Main in 3.307 seconds (process running for 3.579)
+2025-12-07 18:14:32 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[.[localhost].[/api] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-12-07 18:14:32 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-12-07 18:14:32 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-12-07 18:14:32 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.html
+2025-12-07 18:14:32 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:32 [http-nio-8081-exec-1] WARN  o.s.w.s.h.HandlerMappingIntrospector - Cache miss for REQUEST dispatch to '/api/swagger-ui/index.html' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2025-12-07 18:14:32 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.html
+2025-12-07 18:14:32 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui.css
+2025-12-07 18:14:32 [http-nio-8081-exec-3] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:32 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-07 18:14:32 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-ui-bundle.js
+2025-12-07 18:14:32 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/swagger-initializer.js
+2025-12-07 18:14:32 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/index.css
+2025-12-07 18:14:32 [http-nio-8081-exec-5] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:32 [http-nio-8081-exec-4] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:32 [http-nio-8081-exec-2] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:32 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:32 [http-nio-8081-exec-3] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui.css
+2025-12-07 18:14:32 [http-nio-8081-exec-5] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2025-12-07 18:14:32 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-initializer.js
+2025-12-07 18:14:32 [http-nio-8081-exec-2] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/index.css
+2025-12-07 18:14:32 [http-nio-8081-exec-4] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/swagger-ui-bundle.js
+2025-12-07 18:14:33 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs/swagger-config
+2025-12-07 18:14:33 [http-nio-8081-exec-7] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:33 [http-nio-8081-exec-7] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs/swagger-config
+2025-12-07 18:14:33 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Securing GET /swagger-ui/favicon-32x32.png
+2025-12-07 18:14:33 [http-nio-8081-exec-8] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:33 [http-nio-8081-exec-8] DEBUG o.s.security.web.FilterChainProxy - Secured GET /swagger-ui/favicon-32x32.png
+2025-12-07 18:14:33 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2025-12-07 18:14:33 [http-nio-8081-exec-9] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:14:33 [http-nio-8081-exec-9] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2025-12-07 18:14:33 [http-nio-8081-exec-9] INFO  o.s.api.AbstractOpenApiResource - Init duration for springdoc-openapi is: 249 ms
+2025-12-07 18:15:02 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2025-12-07 18:15:02 [http-nio-8081-exec-10] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:15:02 [http-nio-8081-exec-10] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs
+2025-12-07 18:15:55 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Securing GET /v3/api-docs
+2025-12-07 18:15:55 [http-nio-8081-exec-6] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-12-07 18:15:55 [http-nio-8081-exec-6] DEBUG o.s.security.web.FilterChainProxy - Secured GET /v3/api-docs

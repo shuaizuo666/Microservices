@@ -77,6 +77,8 @@ public class WebSecurityConfig {
             .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
             .authorizeHttpRequests(authorize -> authorize
                 .requestMatchers("/auth/register", "/auth/login", "/api/auth/register", "/api/auth/login").permitAll()
+                // 允许访问Swagger相关端点
+                .requestMatchers("/swagger-ui/**", "/v3/api-docs/**", "/swagger-ui.html").permitAll()
                 .requestMatchers("/users/me", "/users/**", "/api/users/me", "/api/users/**").authenticated()
                 .anyRequest().authenticated()
             );
